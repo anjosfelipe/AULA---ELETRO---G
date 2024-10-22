@@ -1,22 +1,21 @@
 #include<stdio.h>
 
 int main(){
-    int x;
-    int n1;
-    int n2;
-    float resposta;
+    float x, y;
+    int op;
+    float r;
 
-    printf("informe a operacao:
-    (1)soma
-    (2)subtracao
-    (3)multiplicacao
-    (4)divisao");
-    scanf("%d",&x);
-    printf("Infome n1:");
-    scanf("%d",&n1);
-    printf("Infome n2:");
-    scanf("%d",&n2);
+    printf("Informe a operacao:\n (1) adicao;\n (2) subtracao;\n (3) multiplicacao;\n (4) divisao;\n");
+    scanf("%d",&op);
+    printf("Informe o primeiro numero:");
+    scanf("%f",&x);
+    printf("Informe o segundo numero:");
+    scanf("%f",&y);
 
-    if(x == 1){printf("")}
-
+    if(op == 1){r = x + y; printf("O resultado da soma: %.2f\n",r);return main();}
+    if(op == 2){r = x - y; printf("O resultado da subtracao: %.2f\n",r);return main();}
+    if(op == 3){r = x * y; printf("O resultado da multiplicacao: %.2f\n",r);return main();}
+    if(op == 4){r = x / y; printf("O resultado da divisao: %.2f\n",r);return main();} 
+    if (op == 0){
+    return 0;}
 }
